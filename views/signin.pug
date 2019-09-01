@@ -1,0 +1,20 @@
+doctype html
+html(lang="fr-Fr")
+    head
+        title Page d'inscription
+        meta(charset="utf-8")
+    body
+        <center>
+        h1 <strong> Bienvenue </strong>
+        h1 Se connecter
+        form(action="/login", method="post")
+            <text>Nom d'utilisateur : </text>
+            input(type="text", name="username")
+            br
+            br
+            <text>Mot de passe : </text>
+            input(type="password", name="password")
+            br 
+            br
+            input(type="submit", value="Signin")
+        </center>

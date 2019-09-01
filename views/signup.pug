@@ -1,0 +1,24 @@
+doctype html
+html(lang="fr-Fr")
+    head
+        title Page d'administration
+        meta(charset="utf-8")
+    body
+        <center>
+        h1 <strong> Bienvenue </strong>
+        h1 S’inscrire
+        form(action="/user", method="post")
+           <text>Veuillez taper un nom d'utilisateur : </text>
+            input(type="text", name="username")
+            br
+            br
+            <text> Veuillez taper un mot de passe : </text>
+            input(type="password", name="password")
+            br
+            br
+            <text> Veuillez entrer votre email : </text>
+            input(type="email", name="email")
+            br
+            br
+            input(type="submit", value="Signup")
+        </center>    

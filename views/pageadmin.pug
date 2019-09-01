@@ -1,0 +1,17 @@
+doctype html
+html(lang="fr-Fr")
+    head
+        title Admin page
+        meta(charset="utf-8")
+    body
+        h1 Page d'administration
+        table
+         tr:th Username 
+         tr:th Emails 
+          tbody
+             each user in users
+              tr
+               td #{user.username}
+               td #{user.email}
+        a.foo_link(href='/logout') Déconnexion
+        
